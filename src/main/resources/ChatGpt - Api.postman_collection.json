@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "b27fd6bb-bd40-4035-aad9-984ee23a543f",
+		"name": "ChatGpt - Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17690723"
+	},
+	"item": [
+		{
+			"name": "Chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/chatboot/chat?message=Que es una galleta ?",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chatboot",
+						"chat"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Que es una galleta ?"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chatboot/chat?message=Que es una galleta ?",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chatboot",
+								"chat"
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "Que es una galleta ?"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "277"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jun 2023 17:10:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "\n\nUna galleta es una pequeña y deliciosa golosina hecha con harina, huevos, azúcar y mantequilla. Se pueden comer solas o con algunos ingredientes adicionales como pasas, nueces, chips de chocolate, etc. Las galletas se pueden encontrar en una variedad de sabores y tamaños."
+				}
+			]
+		},
+		{
+			"name": "Prompt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/chatboot/chat?message=What is a cookie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chatboot",
+						"chat"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "What is a cookie"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prompt",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chatboot/chat?message=What is a cookie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chatboot",
+								"chat"
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "What is a cookie"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "319"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jun 2023 17:11:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "?\n\nA cookie is a small piece of data sent from a website and stored in a user's web browser while the user is browsing. Cookies are used to store and retrieve information about the user's browsing activity, such as their preferences and history, which can then be used to customize the user's experience on the website."
+				}
+			]
+		}
+	]
+}
